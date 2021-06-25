@@ -1,0 +1,20 @@
+{% extends "wypozyczalnia/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<main class="mt-5 pt-4">
+    <div class="container dark-grey-text mt-5">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom">
+                    {{ u_form|crispy }}
+                    {{ p_form|crispy }}
+                </legend>
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-info" type="submit">Zapisz</button>
+            </div>
+        </form>
+    </div>
+</main>
+{% endblock content %}

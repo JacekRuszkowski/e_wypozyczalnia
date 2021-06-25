@@ -1,0 +1,253 @@
+[{
+    "title": "Ręka Mistrza",
+    "author": "Stephen King",
+    "image": "reka_mistrza.jpg",
+    "description": "Edgar Freemantle w ciężkim wypadku samochodowym traci rękę i zdrowe zmysły. Nękany niekontrolowanymi napadami szału, musi zacząć życie od początku. Za radą psychologa wyrusza na Duma Key, olśniewająco piękną i odludną wyspę na wybrzeżu Florydy, należącą do sędziwej Elizabeth Eastlake. Wynajmuje tam dom, wiedząc tylko jedno: chce rysować. Tworzone z chorobliwą pasją obrazy Edgara są owocem talentu, nad którym stopniowo przestaje mieć kontrolę. Kiedy tragiczne dzieje rodziny Eastlake’ów zaczynają wyłaniać się z mroków przeszłości, nieposkromiona moc dzieł Freemantle’a objawia swe coraz bardziej przerażające i niszczycielskie możliwości.",
+    "copies": 3,
+    "category_id": 3,
+    "slug": "reka-mistrza"
+  },
+  {
+    "title": "Władca Much",
+    "author": "William Golding",
+    "image": "wladca_much.jpg",
+    "description": "Jedna z najsłynniejszych powieści o upadku kultury i cywilizacji, która weszła na stałe do kanonu najważniejszych dzieł XX wieku. Grupa chłopców, którzy jako jedyni ocaleli po katastrofie lotniczej, znajduje schronienie na bezludnej wyspie. Początkowo rozbitkowie, pozbawieni nadzoru dorosłych, cieszą się wolnością w rajskiej scenerii z dala od cywilizacji. Jednak ich wysiłki, by stworzyć własne małe społeczeństwo, prowadzą do katastrofy, a przygoda obraca się w koszmar.",
+    "copies": 2,
+    "category_id": 6,
+    "slug": "wladca_much"
+  },
+  {
+    "title": "Imię Róży",
+    "author": "Umberto Eco",
+    "image": "imie_rozy.jpg",
+    "description": "Listopad 1327 roku. Do znamienitego opactwa benedyktynów w północnych Włoszech przybywa uczony franciszkanin, Wilhelm z Baskerville, któremu towarzyszy uczeń i sekretarz, nowicjusz Adso z Melku. W klasztorze panuje ponury nastrój. Opat zwraca się do Wilhelma z prośbą o pomoc w rozwikłaniu zagadki tajemniczej śmierci jednego z mnichów.",
+    "copies": 1,
+    "category_id": 4,
+    "slug": "imie-rozy"
+  },
+  {
+    "title": "Hiperprzestrzeń",
+    "author": "Michio Kaku",
+    "image": "hiperprzestrzen.jpg",
+    "description": "Czy oprócz znanych nam z życia codziennego trzech wymiarów istnieją inne? Czy możliwe są podróże w czasie? Czy czarne dziury są wrotami do innych światów? Czy ludzkość przeżyje śmierć wszechświata? Jeszcze niedawno uczeni odrzucali tego rodzaju pomysły jako dziwaczne spekulacje, dzisiaj znajdują się one wśród najważniejszych tematów podejmowanych przez naukę.",
+    "copies": 2,
+    "category_id": 5,
+    "slug": "hiperprzestrzen"
+  },
+  {
+    "title": "Błękitna Kropka",
+    "author": "Carl Sagan",
+    "image": "blekitna_kropka.jpg",
+    "description": "W „Kosmosie” Carl Sagan tylko „rzucił okiem” na wspaniałą tajemnicę Wszechświata i udostępnił ją milionom ludzi na całym świecie. W „Błękitnej kropce”, oszałamiającej kilkuset barwnymi ilustracjami kontynuacji tamtego bestsellera, słynny astronom kończy swoją rewolucyjną podróż przez przestrzeń i czas.",
+    "copies": 3,
+    "category_id": 5,
+    "slug": "blekitna-kropka"
+  },
+  {
+    "title": "2001: Odyseja Kosmiczna",
+    "author": "Arthur C. Clarke",
+    "image": "odyseja.jpg",
+    "description": "Nie jest nam dane odgadnąć, jak wiele z tych potencjalnych rajów lub piekieł jest zamieszkanych i przez jakiego rodzaju istoty. Najbliższy z nich znajduje się milion razy dalej niż Mars czy Wenus, które nadal stanowią odległe cele kolejnych pokoleń. Lecz przełamujemy bariery odległości i być może któregoś dnia spotkamy pośród gwiazd równych sobie, jeśli nie potężniejszych. Ludzkość bardzo wolno zdaje sobie sprawę z tej możliwości, gdyż – jak sądzą niektórzy – nigdy nie stanie się ona rzeczywistością. Jednak coraz więcej ludzi zadaje pytanie: Dlaczego nie doszło jeszcze do takiego spotkania, skoro my sami już za chwilę podbijemy kosmos?",
+    "copies": 0,
+    "category_id": 3,
+    "slug": "2001-odyseja-kosmiczna"
+  },
+  {
+    "title": "Droga",
+    "author": "Cormac McCarthy",
+    "image": "droga.jpg",
+    "description": "Największe arcydzieło Cormaca McCarthy’ego. Bestseller dziennika „The New York Times” wyróżniony Nagrodą Pulitzera. Ostatnie chwile naszej planety. Ostatni ludzie – krwiożercze bestie. Ostatnie ślady naszej cywilizacji – puszka coca-coli i strzępy starych gazet. Piekło apokalipsy spełnionej w uhonorowanej Nagrodą Pulitzera powieści Cormaca McCarthy’ego. Tę książkę czyta się ze ściśniętym gardłem i pełnym przerażenia zachwytem…",
+    "copies": 4,
+    "category_id": 6,
+    "slug": "droga"
+  },
+  {
+    "title": "Hyperion",
+    "author": "Dan Simmons",
+    "image": "hyperion.jpg",
+    "description": "W obliczu zbliżającej się nieuchronnie międzygalaktycznej wojny na planetę Hyperion przybywa siedmioro pielgrzymów: Kapłan, Żołnierz, Uczony, Poeta, Kapitan, Detektyw i Konsul. Mają za zadanie dotrzeć do mitycznych grobowców, by znaleźć w nich budzącą grozę istotę. Zna ona być może metodę, która pozwoli zapobiec zagładzie całej ludzkości. Każdy z pielgrzymów może przedstawić jej swoją prośbę, lecz wysłuchany zostanie tylko jeden. Pozostali będą musieli zginąć.",
+    "copies": 1,
+    "category_id": 3,
+    "slug": "hyperion"
+  },
+  {
+    "title": "Terror",
+    "author": "Dan Simmons",
+    "image": "terror.jpg",
+    "description": "„Terror” odtwarza przebieg tragicznej w skutkach wyprawy badawczej z maja 1845 roku. Dwa statki – HMS Erebus i HMS Terror – pod dowództwem doświadczonego żeglarza, sir Johna Franklina, wyruszyły ku północnym wybrzeżom Kanady, celem poszukiwania Przejścia Północno-Zachodniego. To ciąg przesmyków pomiędzy wyspami Archipelagu Arktycznego, gdzie od kilkuset już lat, kosztem wielu istnień ludzkich, szukano możliwości opłynięcia Ameryki Północnej, chcąc zaoszczędzić na odległości przemierzanej drogą morską pomiędzy wybrzeżami Atlantyku i Pacyfiku.",
+    "copies": 0,
+    "category_id": 3,
+    "slug": "terror"
+  },
+  {
+    "title": "Kontakt",
+    "author": "Carl Sagan",
+    "image": "kontakt.jpg",
+    "description": "Jedna z najlepszych powieści science fiction, jakie kiedykolwiek napisano na temat kontaktu z pozaziemską inteligencją. Sagan odwołuje się do swojej wiedzy naukowej, by wiarygodnie pokazać, jak ów kontakt mógłby wyglądać.",
+    "copies": 4,
+    "category_id": 3,
+    "slug": "kontakt"
+  },
+  {
+    "title": "Lśnienie",
+    "author": "Stephen King",
+    "image": "lsnienie.jpg",
+    "description": "To jeden z najlepszych współczesnych horrorów. Nastrój grozy i napięcia potęguje się w niej z każdą minutą. Pięcioletni chłopiec Danny znalazł się z rodzicami w opustoszałym na zimie hotelu. Wrażliwe, obdarzone zdolnościami wizjonerskimi dziecko odbiera fluidy czające się w jego murach były one świadkami krwawych porachunków świata przestępczego i milionerów. Straszliwe zdarzenia, które kończą fabułę, są jednak niczym w porównaniu z przejściami psychicznymi bohaterów.",
+    "copies": 2,
+    "category_id": 3,
+    "slug": "lsnienie"
+  },
+  {
+    "title": "Ojciec Chrzestny",
+    "author": "Mario Puzo",
+    "image": "ojciec_chrzestny.jpg",
+    "description": "Jedna z najwybitniejszych powieści XX wieku, zekranizowana przez Francisa Forda Coppolę z genialnymi rolami Marlona Brando i Ala Pacino. Porywająca opowieść o honorze i nienawiści, szacunku i pogardzie, miłości i śmierci.",
+    "copies": 1,
+    "category_id": 4,
+    "slug": "ojciec-chrzestny"
+  },
+  {
+    "title": "Shantaram",
+    "author": "Gregory David Roberts",
+    "image": "shantaram.jpg",
+    "description": "„Shantaram” znaczy „boży pokój”. To imię nadali bohaterowi książki jego hinduscy przyjaciele, zamykając w nim całą historię opowiedzianą w tej książce: historię odnalezienia prawdy o sobiew Indiach. Ale droga do „bożego pokoju” wiodła przez tak dramatyczne wydarzenia, że chwilami aż trudno uwierzyć, iż miały one miejsce naprawdę. Ciemne interesy, handel narkotykami i bronią, fałszerstwa, przemyt, gangsterskie porachunki – a zarazem romantyczna miłość, głębokie przyjaźnie, poszukiwanie mentora, poznawanie filozofii Wschodu. O tym właśnie jest Shantaram.",
+    "copies": 0,
+    "category_id": 7,
+    "slug": "shantaram"
+  },
+  {
+    "title": "Ostatni Mohikanin",
+    "author": "James Fenimore Cooper",
+    "image": "ostatni_mohikanin.jpg",
+    "description": "Powieść przygodowo-historyczna. Stanowi drugi, najbardziej znany tom z cyklu pt. Pięcioksiąg przygód Sokolego Oka.\nOpowieść o losach białego Indianina, jako dziecko przygarniętego przez plemię Mohikanów, rozgrywa się w XVIII-wiecznej skolonizowanej Ameryce, gdzie toczy się wojna między Anglią i Francją. Sokole Oko stara się żyć zgodnie ...",
+    "copies": 2,
+    "category_id": 7,
+    "slug": "ostatni-mohikanin"
+  },
+  {
+    "title": "Na Dalekim Zachodzie",
+    "author": "James Fenimore Cooper",
+    "image": "na_dalekim_zachodzie.jpg",
+    "description": "Nam pharetra leo in est efficitur, at congue massa commodo. Phasellus feugiat dictum suscipit. Quisque vulputate iaculis ex, vitae consectetur leo lobortis mattis. Morbi quis ex eget leo pretium finibus non ac metus. Mauris sed faucibus est. Morbi vel enim et leo fermentum molestie ac et diam. Mauris ac aliquet lectus, sit amet faucibus orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus neque nisl, egestas ac mattis vitae, gravida non sapien. Donec sagittis consequat odio, non cursus neque aliquet in.",
+    "copies": 3,
+    "category_id": 7,
+    "slug": "na-dalekim-zachodzie"
+  },
+  {
+    "title": "20 000 mil podmorskiej żeglugi",
+    "author": "James Fenimore Cooper",
+    "image": "20000_mil.jpg",
+    "description": "Wyobraź sobie podmorską podróż w XIX wieku! Wyrusz na wyprawę z tajemniczym kapitanem Nemo i przekonaj się, jak wielka jest siła imaginacji.\nMistrzowskie wizjonerstwo Juliusza Verne’a, uważanego za prekursora współczesnej fantastyki naukowej, powraca, by zachwycać niebywałymi tajemnicami podwodnego świata i podróżniczymi przygodami.",
+    "copies": 1,
+    "category_id": 7,
+    "slug": "20-000-mil-podmorskiej-zeglugi"
+  },
+  {
+    "title": "Tańczący z Wilkami",
+    "author": "Michael Blake",
+    "image": "tanczacy_z_wilkami.jpg",
+    "description": "Wraz z książką Michaela Blake'a rozpoczął się wielki renesans ginącego gatunku literackiego - westernu. Znajdziesz w niej to, co w powieściach z Dzikiego Zachodu najlepsze, a ponadto zaskoczy cię ona swoim bogactwem.",
+    "copies": 2,
+    "category_id": 7,
+    "slug": "tanczacy-z-wilkami"
+  },
+  {
+    "title": "Robinson Crusoe",
+    "author": "Daniel Defoe",
+    "image": "robinson_crusoe.jpg",
+    "description": "Robinson Crusoe is at sea when there is a great storm. His ship goes down, and his friends die. The sea throws Crusoe onto a beach. He is on an island. But which island? Are there other people on it? And are they friendly? What will Crusoe do now?",
+    "copies": 1,
+    "category_id": 7,
+    "slug": "robinson-crusoe"
+  },
+  {
+    "title": "Tragedia Na Przełęczy Diatłowa",
+    "author": "Alice Lugen",
+    "image": "diatlowa.jpg",
+    "description": "Pod koniec stycznia 1959 roku grupa turystów, głównie studentów i absolwentów Politechniki Uralskiej, postanowiła uczcić kolejny zjazd KPZR zdobyciem góry Otorten w Uralu Północnym. Wyprawa zakończyła się tragicznie i w wyjątkowo zdumiewających okolicznościach. Obozujący na zboczu turyści rozcięli swój namiot, wybiegli w uralską noc, rozpalili ognisko.",
+    "copies": 2,
+    "category_id": 5,
+    "slug": "tragedia-na-przelczy-diatlowa"
+  },
+  {
+    "title": "Stulecie Chirurgów",
+    "author": "Jürgen Thorwald",
+    "image": "stulecie_chirurgow.jpg",
+    "description": "Książka brutalnie pokazuje, jakim macaniem w ciemności była chirurgia jeszcze w XIX wieku. Narzędzia, z którymi ma do czynienia narrator, ów żądny wiedzy chirurg z nowego świata, to nóż rzeźnicki, piła, żelazo. Opowiada, jak prowincjonalny lekarz z Kentucky, który ulega błaganiom umierającej pacjentki, wycina jej na żywo ogromną torbiel. Dzielna kobieta wyje psalmy, pod oknem gromadzi się tłum, który grozi »mordercy« pętlą. Pacjentka przeżywa zabieg, co pozwala także przeżyć chirurgowi. Lekarz ten jednak wkrótce umiera, bo nie znalazł się podobny do niego ryzykant, który wyciąłby mu wyrostek.",
+    "copies": 0,
+    "category_id": 5,
+    "slug": "stulecie-chirurgow"
+  },
+  {
+    "title": "Triumf chirurgów",
+    "author": "Jürgen Thorwald",
+    "image": "triumf_chirurgow.jpg",
+    "description": "Kontynuacja znakomitego „Stulecia chirurgów”, czyli kolejna odsłona heroicznej opowieści o początkach i dziejach chirurgii.",
+    "copies": 1,
+    "category_id": 5,
+    "slug": "triumf_chirurgow"
+  },
+  {
+    "title": "Ucieczka Na Szczyt",
+    "author": "Bernadette McDonald",
+    "image": "ucieczka_na_szczyt.jpg",
+    "description": "„Ucieczka na szczyt” to niezwykła książka poświęcona złotej erze polskiego himalaizmu oraz fenomenowi dominacji Polaków w Himalajach w latach 70. i 80. Bogato ilustrowana opowieść autorstwa kanadyjskiej pisarki i animatorki kultury górskiej Bernadette McDonald przywołuje takie ikony himalaizmu jak m.in. Jerzy Kukuczka, Wanda Rutkiewicz, Krzysztof Wielicki czy Wojciech Kurtyka.",
+    "copies": 2,
+    "category_id": 5,
+    "slug": "ucieczka-na-szczyt"
+  },
+  {
+    "title": "Firma",
+    "author": "John Grisham",
+    "image": "firma.jpg",
+    "description": "Mitchell McDeere, wyróżniający się student prawa, może przebierać w ofertach. O dziwo, najatrakcyjniejszą otrzymuje nie z wielkiej nowojorskiej korporacji, lecz z niedużej firmy w Memphis. Zachęcony wysokimi zarobkami i innymi korzyściami, decyduje się wraz z żoną przeprowadzić się do Tennessee. Wkrótce FBI informuje go, że jego firma zajmuje się praniem brudnych pieniędzy, i daje wybór: albo Mitchell pójdzie na współpracę z Biurem, albo wyląduje w więzieniu.",
+    "copies": 1,
+    "category_id": 4,
+    "slug": "firma"
+  },
+  {
+    "title": "Klient",
+    "author": "John Grisham",
+    "image": "klient.jpg",
+    "description": "Jedenastoletni Mark staje się przypadkowym świadkiem samobójstwa znanego adwokata. Tuż przed śmiercią prawnik wyznaje chłopcu, gdzie zostało ukryte ciało senatora Boyette'a, ofiary głośnej zbrodni. Od tej chwili morderca senatora zaczyna ścigać Marka - usiłuje go zabić, by zamknąć mu usta na zawsze. Chłopcu nie daje spokoju również FBI i policja. Z pomocą zaszczutemu, przerażonemu dziecku przychodzi prawniczka, Reggie Love. We dwójkę spróbują stawić czoło władzy i mafii...",
+    "copies": 3,
+    "category_id": 4,
+    "slug": "klient"
+  },
+  {
+    "title": "Polowanie na Czerwony Październik",
+    "author": "Tom Clancy",
+    "image": "polowanie_na_czerwony_pazdziernik.jpg",
+    "description": "Trwa zimna wojna. Radziecki okręt podwodny „Czerwony Październik” wbrew rozkazom sowieckiej admiralicji kieruje się ku wybrzeżom Stanów Zjednoczonych.\nJakie zamiary ma Marko Ramius, kapitan nowoczesnej i nieuchwytnej dla radarów łodzi podwodnej? Czy zgodnie z zapewnieniami Rosjan stanowi zagrożenie dla Amerykanów?",
+    "copies": 2,
+    "category_id": 4,
+    "slug": "polowanie-na-czerwony-pazdziernik"
+  },
+  {
+    "title": "Dzień Szakala",
+    "author": "Frederick Forsyth",
+    "image": "dzien_szakala.jpg",
+    "description": "Bezwzględny i nieprzeciętnie inteligentny zabójca kontra najlepszy francuski gliniarz, któremu biurokracja wiąże ręce.\nWiosna 1963 roku. Po kolejnym nieudanym zamachu na prezydenta Francji Charles'a de Gaulle'a szef komórki operacyjnej organizacji terrorystycznej OAS, Marc Rodin, wynajmuje zawodowego zabójcę.",
+    "copies": 1,
+    "category_id": 4,
+    "slug": "dzien_szakala"
+  },
+  {
+    "title": "Lot Nad Kukułczym Gniazdem",
+    "author": "Ken Kesey",
+    "image": "lot_nad_kukulczym_gniazdem.jpg",
+    "description": "McMurphy, szuler, dziwkarz i zabijaka, udaje wariata, żeby wykpić się od odsiadywania wyroku. Pobyt w szpitalu psychiatrycznym wydaje mu się dobrym żartem. Do chwili, gdy dowiaduje się, że nie odzyska wolności, dopóki nie uznają go za wyleczonego. Decyzja należy do Wielkiej Oddziałowej, z pozoru uosobienia słodyczy i dobroci, w rzeczywistości sadystki znęcającej się nad pacjentami.",
+    "copies": 3,
+    "category_id": 6,
+    "slug": "lot-nad-kukulczym-gniazdem"
+  },
+  {
+    "title": "Cienka Czerwona Linia",
+    "author": "James Jones",
+    "image": "cienka_czerwona_linia.jpg",
+    "description": "Uznawana za jeden z najsłynniejszych książek wojennych XX wieku. Autor, w niezwykle sugestywny, realistyczny sposób, przedstawia wojnę, i nic dziwnego, sam w końcu brał udział w opisywanej przez siebie batalii, na wyspie Guadalcanal, w listopadzie 1942 roku.",
+    "copies": 1,
+    "category_id": 6,
+    "slug": "cienka-czerwona-linia"
+  }
+]

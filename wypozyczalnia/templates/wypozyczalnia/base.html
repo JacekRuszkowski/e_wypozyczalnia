@@ -1,0 +1,225 @@
+{% load static %}
+{% load cart_template_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>e-biblioteka</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'wypozyczalnia/css/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="{% static 'wypozyczalnia/css/mdb.min.css' %}" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="{% static 'wypozyczalnia/css/style.min.css' %}" rel="stylesheet">
+  <style type="text/css">
+    html,
+    body,
+    header,
+    .carousel {
+      height: 60vh;
+    }
+
+    @media (max-width: 740px) {
+
+      html,
+      body,
+      header,
+      .carousel {
+        height: 100vh;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+
+      html,
+      body,
+      header,
+      .carousel {
+        height: 100vh;
+      }
+    }
+
+    .star-widget input {
+      display: none;
+    }
+
+    .star-widget label {
+      font-size: 12px;
+      color: #c8c8c8;
+      transition: all 0.2s ease;
+    }
+
+    .profile_img {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+    <div class="container">
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="mt-1" href="{% url 'home' %}"><img src="\media\logo_b.svg">
+              <span class="sr-only">(current)</span>
+            </a>
+            {% if user.is_superuser %}
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="{% url 'book-add' %}">Dodaj książkę</a>
+          </li>
+          {% endif %}
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          {% if user.is_authenticated %}
+          <!--koszyk-->
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="{% url 'borrows' %}">
+              <span class="badge red z-depth-0 mr-1">
+                {{ request.user|cart_count }}
+              </span>
+              <i class="fas fa-book"></i>
+              <span class="clearfix d-none d-sm-inline-block"> Wypożyczone Książki </span>
+            </a>
+          </li>
+          <!--koszyk-->
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="{% url 'profile-view' %}">Profil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="{% url 'logout' %}">Wyloguj</a>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="{% url 'login' %}">Zaloguj</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="{% url 'register' %}"> Zarejestruj</a>
+          </li>
+          {% endif %}
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- messages -->
+  {% if messages %}
+  {% for message in messages %}
+  <div class="container pt-5">
+    <div class="alert alert-{{ message.tags }} mt-5">
+      {{ message }}
+    </div>
+  </div>
+  {% endfor %}
+  {% else %}
+  <div class="container pt-5">
+    <div class="mt-5"></div>
+  </div>
+  {% endif %}
+  <!-- messages -->
+
+  {% block content %}{% endblock %}
+
+  <!--Pagination-->
+  <!-- zrobic warunek, żeby pojawiały się tylko na stronach, na których są strony -->
+  {% if books.has_other_pages %}
+  <nav class="d-flex justify-content-center wow fadeIn">
+    <ul class="pagination pg-blue">
+      <!--Arrow left-->
+      {% if books.has_previous %}
+      <li class="page-item">
+        <a class="page-link" href="?page={{ books.previous_page_number }}" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      {% endif %}
+
+      <!-- current page number -->
+      {% for page in books.paginator.page_range %}
+      {% if books.number == page %}
+      <li class="page-item active">
+        <a class="page-link" href="?page={{ page }}">{{ page }}</a>
+      </li>
+      {% else %}
+      <li class="page-item">
+        <a class="page-link" href="?page={{ page }}">{{ page }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+      <!-- current page number -->
+      <!-- Arrow Right -->
+      {% if books.has_next %}
+      <li class="page-item">
+        <a class="page-link" href="?page={{ books.next_page_number }}" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+  {% endif %}
+  <!--Pagination-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2019 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="{% static 'wypozyczalnia/js/jquery-3.4.1.min.js' %}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{% static 'wypozyczalnia/js/popper.min.js' %}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{% static 'wypozyczalnia/js/bootstrap.min.js' %}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{% static 'wypozyczalnia/js/mdb.min.js' %}"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+{% extends "wypozyczalnia/base.html" %}
+
+{% block content %}
+<main class="pt-4">
+  <div class="container dark-grey-text">
+    <h3>Wszystkie książki tego autora:</h3>
+    <h2 class="title">{{ author_name }}</h2>
+    <br>
+    <!--Section: Products v.3-->
+    <section class="text-center mb-4">
+      <div class="row wow fadeIn">
+        {% for book in books %}
+        <div class="col-lg-3 md-6 mb-4">
+          <div class="card">
+            <!--Card image-->
+            <div class="view overlay">
+              <img src="{{ book.image.url }}" class="card-img-top" alt="">
+              <a href="{% url 'book-detail' book.slug %}">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Card image-->
+
+            <!--Card content-->
+            <div class="card-body text-center">
+              <!--Category & Title-->
+              <a href="{% url 'categories' book.category.slug %}" class="grey-text">
+                <p>{{ book.category }}</p>
+              </a>
+              <h6>
+                <strong>
+                  <a href="{% url 'book-detail' book.slug %}" class="dark-grey-text">{{ book.title }}
+                  </a>
+                </strong>
+              </h6>
+              <a class="grey-text" href="{% url 'authors-books' book.author %}">{{ book.author }}</a>
+              <div class="mt-1">
+                {% if book.copies > 0 %}
+                <span class="badge green mr-1">DOSTĘPNA</span>
+                {% else %}
+                <span class="badge red mr-1">NIEDOSTĘPNA</span>
+                {% endif %}
+              </div>
+            </div>
+            <!--Card content-->
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    <!--Section: Products v.3-->
+  </div>
+</main>
+{% endblock content %}

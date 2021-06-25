@@ -1,0 +1,36 @@
+{% extends 'wypozyczalnia/base.html' %}
+
+
+
+{% block content %}
+<main>
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Wypożyczenia</th>
+          <th scope="col">Termin zwrotu</th>
+          <th scope="col">Zwróć</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in items %}
+        <tr>
+          <td>{{ item }}</td>
+          <!--      sprawdzanie czy książka nie jest już po terminie -->
+          {% if time_now|date:'U' > item.return_date|date:'U' %}
+          <td><span class="badge-danger mr-1">{{ item.return_date|date:'Y-d-m' }}</span></td>
+          {% else %}
+          <td>{{ item.return_date|date:'Y-d-m' }}</td>
+          {% endif %}
+
+          <td><a class="text-muted" href="{% url 'return-book' item.item.slug %}">zwróć
+            </a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+</main>
+{% endblock content %}

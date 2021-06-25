@@ -1,0 +1,15 @@
+{% extends "wypozyczalnia/base.html" %}
+{% block content %}
+<main class="mt-5 pt-4">
+    <div class="container dark-grey-text mt-5">
+        <div class="col-6 offset-3">
+            <h5 class="title">Użytkownik wylogowany</h5>
+            <div class="border-top pt=5">
+                <small class="text-muted">
+                    <a href="{% url 'login' %}">Zaloguj się ponownie</a>
+                </small>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock content %}

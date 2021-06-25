@@ -1,0 +1,97 @@
+{% extends "wypozyczalnia/base.html" %}
+
+{% block content %}
+
+<!--Main layout-->
+<main>
+  <div class="container">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark mdb-color lighten-3 mt-5 mb-5">
+
+      <!-- Navbar brand -->
+      <span class="navbar-brand">Categories:</span>
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="{% url 'home' %}">Wszystkie
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          {% for category in categories %}
+          <a class="nav-link" href="{% url 'categories' category.slug %}">{{ category.name }}</a>
+          {% endfor %}
+        </ul>
+        <!-- Links -->
+
+        <form class="form-inline" action={% url 'search-results' %} method="get">
+          <div class="md-form my-0">
+            <input class="form-control mr-sm-2" name="q" type="text" placeholder="Podaj tytyuł lub autora...">
+            <!--              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+          </div>
+        </form>
+      </div>
+      <!-- Collapsible content -->
+
+    </nav>
+    <!--/.Navbar-->
+
+    <p class="lead font-weight-bold">Wyniki wyszukiwania:</p>
+
+    <!--Section: Products v.3-->
+    <section class="text-center mb-4">
+      <div class="row wow fadeIn">
+        {% for book in books %}
+        <div class="col-lg-3 md-6 mb-4">
+          <div class="card">
+            <!--Card image-->
+            <div class="view overlay">
+              <img src="{{ book.image.url }}" class="card-img-top" alt="">
+              <a href="{% url 'book-detail' book.slug %}">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <!--Card image-->
+
+            <!--Card content-->
+            <div class="card-body text-center">
+              <!--Category & Title-->
+              <a href="{% url 'categories' book.category.slug %}" class="grey-text">
+                <p>{{ book.category }}</p>
+              </a>
+              <h6>
+                <strong>
+                  <a href="{% url 'book-detail' book.slug %}" class="dark-grey-text">{{ book.title }}
+                  </a>
+                </strong>
+              </h6>
+              <a class="grey-text" href="{% url 'authors-books' book.author %}">{{ book.author }}</a>
+              <div class="mt-1">
+                {% if book.copies > 0 %}
+                <span class="badge green mr-1">DOSTĘPNA</span>
+                {% else %}
+                <span class="badge red mr-1">NIEDOSTĘPNA</span>
+                {% endif %}
+              </div>
+            </div>
+            <!--Card content-->
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+    <!--Section: Products v.3-->
+
+  </div>
+</main>
+<!--Main layout-->
+{% endblock content %}
